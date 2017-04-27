@@ -2,6 +2,7 @@ $(function () {
 
     $("#generate").click(function () {
         $("#sn").val(generateSerial($("#model").val()));
+	$("#mac").value = generateMac();
     });
 
     $.getJSON("synology_new.json", function(json) {
